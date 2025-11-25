@@ -6,7 +6,7 @@ from airflow.utils.dates import days_ago
 
 # --- CONFIGURAÇÕES ---
 # Ajuste o caminho base conforme seu ambiente
-BASE_PROJECT_PATH = "/Users/migueltorikachvili/PycharmProjects/Airflow_2.9.3"
+BASE_PROJECT_PATH = "/"
 # Definindo BRONZE_ROOT sem depender de F-STRING:
 BRONZE_ROOT = "file://" + BASE_PROJECT_PATH + "/data-lake/bronze/sales"
 SILVER_ROOT = "file://" + BASE_PROJECT_PATH + "/data-lake/silver/sales"

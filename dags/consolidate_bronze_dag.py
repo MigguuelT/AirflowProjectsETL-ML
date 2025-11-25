@@ -5,14 +5,14 @@ from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOpe
 from airflow.utils.dates import days_ago
 
 # Configurações do ambiente
-DB_PATH = "/Users/migueltorikachvili/PycharmProjects/Airflow_2.9.3/data/projeto_etl/public_sales.db"
-HDFS_BASE_PATH = "file:///Users/migueltorikachvili/PycharmProjects/Airflow_2.9.3/data-lake/bronze/sales"
+DB_PATH = "//data/projeto_etl/public_sales.db"
+HDFS_BASE_PATH = "file:///Users/migueltorikachvili/PycharmProjects/Airflow_ETL/data-lake/bronze/sales"
 
 # Argumentos base para o Spark Submit
 SPARK_ARGS_BASE = {
     "conn_id": "SPARK-BIGDATA",
-    "application": "/Users/migueltorikachvili/PycharmProjects/Airflow_2.9.3/dags/spark/load_hdfs.py",
-    "jars": "/Users/migueltorikachvili/PycharmProjects/Airflow_2.9.3/lib/sqlite-jdbc-3.44.1.0.jar",
+    "application": "/Users/migueltorikachvili/PycharmProjects/Airflow_ETL/dags/spark/load_hdfs.py",
+    "jars": "/Users/migueltorikachvili/PycharmProjects/Airflow_ETL/lib/sqlite-jdbc-3.44.1.0.jar",
     "conf": {"spark.master": "local[*]"},
     "verbose": True,
 }

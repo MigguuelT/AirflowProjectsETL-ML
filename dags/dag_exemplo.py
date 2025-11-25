@@ -2,7 +2,7 @@ from datetime import datetime
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
-AIRFLOW_HOME = '/Users/migueltorikachvili/PycharmProjects/Airflow_2.9.3'
+AIRFLOW_HOME = '/Users/migueltorikachvili/PycharmProjects/Airflow_ETL'
 
 
 def gera_arquivo():

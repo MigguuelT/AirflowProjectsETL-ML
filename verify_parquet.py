@@ -4,7 +4,7 @@ from pyspark.sql import SparkSession
 # IMPORTANTE: ATUALIZE ESTE CAMINHO ANTES DE RODAR
 # Altere a data '2025-11-18' para a data da última execução da sua DAG.
 # --------------------------------------------------------------------------------
-PARQUET_PATH = "file:///Users/migueltorikachvili/PycharmProjects/Airflow_2.9.3/data-lake/bronze/sales/customers/date=2025-11-18"
+PARQUET_PATH = "file:///Users/migueltorikachvili/PycharmProjects/Airflow_ETL/data-lake/bronze/sales/customers/date=2025-11-18"
 
 def main():
     """Lê o arquivo Parquet e exibe o esquema e os dados."""

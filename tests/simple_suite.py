@@ -5,7 +5,7 @@ from airflow.operators.python import PythonOperator
 
 from tests.tasks_dag import le_arquivo, mascara_senha, salva_arquivo
 
-AIRFLOW_HOME= '/Users/migueltorikachvili/PycharmProjects/Airflow_2.9.3'
+AIRFLOW_HOME= '/Users/migueltorikachvili/PycharmProjects/Airflow_ETL'
 
 def test_file_exist():
     assert os.path.exists(f'{AIRFLOW_HOME}/data/novo.csv')

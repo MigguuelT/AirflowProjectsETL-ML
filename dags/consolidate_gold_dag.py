@@ -4,7 +4,7 @@ from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOpe
 from airflow.utils.dates import days_ago
 
 # --- CONFIGURAÇÕES ---
-BASE_PATH = "/Users/migueltorikachvili/PycharmProjects/Airflow_2.9.3"
+BASE_PATH = "/"
 SILVER_BASE = f"file://{BASE_PATH}/data-lake/silver/sales"
 GOLD_BASE = f"file://{BASE_PATH}/data-lake/gold/sales"
 SCRIPT_PATH = f"{BASE_PATH}/dags/spark/process_gold.py"

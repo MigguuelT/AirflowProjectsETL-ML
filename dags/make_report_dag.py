@@ -18,9 +18,9 @@ matplotlib.use('Agg')
 
 # --- CONFIGURAÇÕES ---
 # Ajuste para o caminho local
-LOCAL_BASE_PATH = "/Users/migueltorikachvili/PycharmProjects/Airflow_2.9.3/data-lake/gold/sales"
-# Pasta onde os arquivos HTML/TXT serão salvos (Ex: /Users/.../Airflow_2.9.3/reports)
-REPORT_OUTPUT_DIR = "/Users/migueltorikachvili/PycharmProjects/Airflow_2.9.3/reports"
+LOCAL_BASE_PATH = "//data-lake/gold/sales"
+# Pasta onde os arquivos HTML/TXT serão salvos (Ex: /Users/.../Airflow_ETL/reports)
+REPORT_OUTPUT_DIR = "//reports"
 
 # Email de destino
 EMAIL_TO = "migueltori78@gmail.com"
